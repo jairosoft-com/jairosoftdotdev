@@ -2,13 +2,10 @@ import { CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Navbar from "@/components/navbar";
 
 export default function SuccessPage() {
   return (
-    <>
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
         <Card className="w-full max-w-md">
           <CardHeader className="text-center">
             <div className="flex justify-center mb-4">
@@ -34,6 +31,5 @@ export default function SuccessPage() {
           </CardContent>
         </Card>
       </main>
-    </>
   );
 }

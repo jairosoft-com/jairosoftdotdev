@@ -1,8 +1,7 @@
 import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
 import PricingCard from "@/components/pricing-card";
-import Footer from "@/components/footer";
 import { createClient } from "../../supabase/server";
+import { Metadata } from 'next'
 import {
   ArrowUpRight,
   CheckCircle2,
@@ -16,6 +15,11 @@ import {
   Clock,
 } from "lucide-react";
 
+export const metadata: Metadata = {
+  title: 'JairoSoft - Professional Software Development Services',
+  description: 'Professional software development services specializing in modern web applications, mobile development, and technical consulting. Transform your ideas into successful digital products.',
+}
+
 export default async function Home() {
   const supabase = await createClient();
   const {
@@ -28,7 +32,6 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
       <Hero />
 
       {/* Services Section */}
@@ -238,8 +241,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
