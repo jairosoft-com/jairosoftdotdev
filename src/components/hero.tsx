@@ -16,7 +16,6 @@ export default function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-600">
                 Digital Capacity
               </span>
-              , Stress-Free:
               <br className="hidden sm:block" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
                 On-Demand Expert Teams
