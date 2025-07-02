@@ -53,11 +53,11 @@ export default async function ForgotPassword(props: {
             </div>
 
             <SubmitButton
+              className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 text-white font-semibold shadow-md hover:shadow-lg"
+              pendingText="Sending reset email..."
               formAction={forgotPasswordAction}
-              pendingText="Sending reset link..."
-              className="w-full"
             >
-              Reset Password
+              Send Reset Email
             </SubmitButton>
 
             <FormMessage message={searchParams} />
