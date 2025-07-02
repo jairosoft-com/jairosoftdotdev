@@ -3,6 +3,8 @@ import { FormMessage, Message } from "@/components/form-message";
 import { SubmitButton } from "@/components/submit-button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 
 interface LoginProps {
@@ -76,7 +78,7 @@ export default async function SignInPage({ searchParams }: LoginProps) {
             </div>
 
             <SubmitButton
-              className="w-full"
+              className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 text-white font-semibold shadow-md hover:shadow-lg"
               pendingText="Signing in..."
               formAction={signInAction}
             >
